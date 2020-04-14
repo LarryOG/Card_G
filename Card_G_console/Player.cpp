@@ -5,24 +5,41 @@ int Player::get_power() const
 	return power;
 }
 
-list<Card> Player::get_hand() const
+void Player::set_power(int new_power) 
+{
+	power = new_power;
+}
+
+
+vector<Card*> Player::get_hand() const
 {
 	return hand;
 }
 
-vector<Card> Player::get_board() const
+void Player::set_hand(vector<Card*> new_hand)
+{
+	hand = new_hand;
+}
+ 
+vector<Card*> Player::get_board() const
 {
 	return board;
 }
 
-void Player::play_card(Card card)
+void Player::set_board(vector<Card*> new_board)
 {
-	card.play();
+	board = new_board;
 }
 
-void Player::pick_card(Deck)
+void Player::play_card(Card& c, Game game)
 {
-	
+	hand.erase(remove(hand.begin(), hand.end(), c), hand.end());
+
+	board.push_back(c);
+
+	c.play(game);
 }
+
+
 
 

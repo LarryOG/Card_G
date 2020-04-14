@@ -147,9 +147,8 @@
     <ClCompile Include="CardPowerPlus.cpp" />
     <ClCompile Include="CardSteal.cpp" />
     <ClCompile Include="Card_G_console.cpp" />
-    <ClCompile Include="Deck.cpp" />
     <ClCompile Include="Game.cpp" />
-    <ClCompile Include="LogManager.cpp" />
+    <ClCompile Include="Log.cpp" />
     <ClCompile Include="PersistenceManager.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="UserPlayer.cpp" />
@@ -161,11 +160,8 @@
     <ClInclude Include="CardPowerMinus.h" />
     <ClInclude Include="CardPowerPlus.h" />
     <ClInclude Include="CardSteal.h" />
-    <ClInclude Include="Deck.h" />
     <ClInclude Include="Game.h" />
-    <ClInclude Include="LogManager.h" />
-    <ClInclude Include="Observable.h" />
-    <ClInclude Include="Observer.h" />
+    <ClInclude Include="Log.h" />
     <ClInclude Include="PersistenceManager.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="UserPlayer.h" />

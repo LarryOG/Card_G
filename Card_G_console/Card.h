@@ -1,18 +1,18 @@
 #pragma once
 #include <string>
+#include "Game.h"
 
-class Game;
-using namespace std;
 
 class Card
 {
 	friend class CardFactory;
-		string card_name;
+		std::string card_name;
 
 public:
-	string  get_name() const { return card_name; }
+	std::string  get_name() const { return card_name; }
+	void set_name(const std::string new_name) { card_name = new_name; }
 	virtual ~Card() = default;
-	virtual void play(const Game&) = 0;
+	virtual void play(Game game) const = 0;
 
 	
 	

@@ -2,13 +2,14 @@
 
 using namespace std;
 
-CardPowerPlus::CardPowerPlus(string name, int value)
+CardPowerPlus::CardPowerPlus(const string name, const int value)
 {
-		card_name = name;
+		set_name(name);
 		power_value = value;	
 }
-void CardPowerPlus::play(const Game& game)
-{
-	
+void CardPowerPlus::play(Game game) const
+{ 
+	auto player = game.get_active_player();
+	player->set_power(player->get_power() + power_value);
 }
 
