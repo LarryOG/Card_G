@@ -4,7 +4,8 @@
 #include "Card.h"
 
 using namespace std;
-class Player 
+class Player : public Observable
+
 
 {
 	vector<Card*> board;
@@ -13,10 +14,13 @@ class Player
 public:
 	int get_power() const;
 	void set_power(int new_power);
+	
 	vector<Card*> get_hand() const;
 	void set_hand(vector<Card*> new_hand);
+	
 	vector<Card*> get_board() const;
 	void set_board(vector<Card*> new_board);
+	
 	void play_card(Card& c, Game game);
 	void pick_card(vector<Card> deck);
 	void return_card(Card& c, vector<Card> deck);

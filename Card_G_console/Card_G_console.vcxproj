@@ -151,7 +151,6 @@
     <ClCompile Include="Log.cpp" />
     <ClCompile Include="PersistenceManager.cpp" />
     <ClCompile Include="Player.cpp" />
-    <ClCompile Include="UserPlayer.cpp" />
     <ClCompile Include="VirtualPlayer.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -164,11 +163,11 @@
     <ClInclude Include="Log.h" />
     <ClInclude Include="PersistenceManager.h" />
     <ClInclude Include="Player.h" />
-    <ClInclude Include="UserPlayer.h" />
+    <ClInclude Include="resource.h" />
     <ClInclude Include="VirtualPlayer.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="ClassDiagram.cd" />
+    <ResourceCompile Include="Card_G_console.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
